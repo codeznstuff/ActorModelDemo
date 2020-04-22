@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalculatorComponent Calculator Snapshot should match 1`] = `
+"<div className=\\"app\\" data-testid=\\"calculator\\">
+  <div className=\\"calculator_wrapper\\">
+    <Input previousInput=\\"\\" input=\\"\\" />
+    <div className=\\"row\\">
+      <Button id=\\"7\\" value=\\"7\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"8\\" value=\\"8\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"9\\" value=\\"9\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"x\\" value=\\"x\\" operator={true} handleClick={[Function: handleClick]} />
+    </div>
+    <div className=\\"row\\">
+      <Button id=\\"4\\" value=\\"4\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"5\\" value=\\"5\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"6\\" value=\\"6\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"Minus\\" value=\\"-\\" operator={true} handleClick={[Function: handleClick]} />
+    </div>
+    <div className=\\"row\\">
+      <Button id=\\"1\\" value=\\"1\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"2\\" value=\\"2\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"3\\" value=\\"3\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"Plus\\" value=\\"+\\" operator={true} handleClick={[Function: handleClick]} />
+    </div>
+    <div className=\\"row\\">
+      <Button id=\\"0\\" value=\\"0\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"Period\\" value=\\".\\" handleClick={[Function: addToInput]} />
+      <Button id=\\"Enter\\" value=\\"=\\" operator={true} handleClick={[Function: handleClick]} />
+      <Button id=\\"Divide\\" value=\\"/\\" operator={true} handleClick={[Function: handleClick]} />
+    </div>
+    <div className=\\"row\\">
+      <ClearButton handleClear={[Function: handleClear]} />
+    </div>
+  </div>
+</div>"
+`;

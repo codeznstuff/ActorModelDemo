@@ -1,0 +1,100 @@
+{
+  "name": "demo-app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jquery": "^3.5.0",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1"
+  },
+  "scripts": {
+    "start:dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "start": "npm run start:dev",
+    "types": "typesync",
+    "prettier": "prettier --check ./src/**/**.{ts,tsx}",
+    "prettier:write": "prettier --write ./src/**/**.{ts,tsx}",
+    "citest": "set CI=true&&set JEST_JUNIT_OUTPUT_DIR=coverage&&npm test -- --coverage --reporters=jest-junit",
+    "lint": "eslint --ext .ts --ext .tsx src --max-warnings 0",
+    "test:coverage": "npm test -- --coverage",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "npm:auth": "vsts-npm-auth -config .npmrc",
+    "npm:update": "npm-check --update"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/react-hooks": "^2.0.3",
+    "@types/bootstrap": "^4.3.2",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^24.9.1",
+    "@types/json-server": "^0.14.2",
+    "@types/nock": "^11.1.0",
+    "@types/node": "^12.12.37",
+    "@types/node-sass": "^4.11.0",
+    "@types/prettier": "^1.19.1",
+    "@types/react": "^16.9.34",
+    "@types/react-bootstrap": "^0.32.21",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-router-dom": "^5.1.4",
+    "@types/react-test-renderer": "^16.9.2",
+    "@types/storybook__react": "^4.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "husky": "^3.1.0",
+    "jest-fetch-mock": "^3.0.3",
+    "jest-junit": "^8.0.0",
+    "nock": "^11.9.1",
+    "npm-check": "^5.9.2",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^1.11.1",
+    "react-test-renderer": "^16.13.1",
+    "typescript": "^3.8.3",
+    "typesync": "^0.6.1",
+    "vsts-npm-auth": "^0.37.0"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "cobertura",
+      "jest-junit"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!src/**/*.stories.tsx"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonComponent Button Snapshot should match 1`] = `
+"<div id=\\"Button5\\" className=\\"btn_wrapper \\" onClick={[Function: onClick]} data-testid=\\"5\\">
+  5
+</div>"
+`;

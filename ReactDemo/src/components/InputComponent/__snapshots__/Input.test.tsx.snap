@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputComponent Input Snapshot should match 1`] = `
+"<table className=\\"input\\" data-testid=\\"input\\">
+  <tbody>
+    <tr>
+      <td id=\\"previous\\" data-testid=\\"previous\\">
+        PREVIOUS
+      </td>
+    </tr>
+    <tr>
+      <td data-testid=\\"current\\">
+        CURRENT
+      </td>
+    </tr>
+  </tbody>
+</table>"
+`;
