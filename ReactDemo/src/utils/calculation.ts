@@ -13,16 +13,16 @@ export default {
 
     switch (+operation) {
       case OperationType.Addition:
-        clientReturnContract = await add(val1, val2);
+        clientReturnContract = await add(val2, val1);
         break;
       case OperationType.Subtraction:
-        clientReturnContract = await subtract(val1, val2);
+        clientReturnContract = await subtract(val2, val1);
         break;
       case OperationType.Multiplication:
-        clientReturnContract = await multiply(val1, val2);
+        clientReturnContract = await multiply(val2, val1);
         break;
       case OperationType.Division:
-        clientReturnContract = await divide(val1, val2);
+        clientReturnContract = await divide(val2, val1);
         break;
       default:
         break;
