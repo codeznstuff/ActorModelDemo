@@ -28,7 +28,7 @@ namespace Calculator.AkkaDemo.Actors
             Receive<DivideMessage>(divide =>
             {
                 var result = divide.Term1 / divide.Term2;
-                if (float.IsPositiveInfinity(result) || float.IsNegativeInfinity(result))
+                if (float.IsPositiveInfinity(result) || float.IsNegativeInfinity(result) || divide.Term2 == 0)
                 {
                     result = 0;
                 }

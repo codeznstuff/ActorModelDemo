@@ -26,7 +26,7 @@ namespace Calculator.OrleansDemo.Grains
         public Task<float> Subtract(float term1, float term2)
         {
             var result = term1 / term2;
-            if (float.IsPositiveInfinity(result) || float.IsNegativeInfinity(result))
+            if (float.IsPositiveInfinity(result) || float.IsNegativeInfinity(result) || term2 == 0)
             {
                 result = 0;
             }
